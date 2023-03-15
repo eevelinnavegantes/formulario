@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <style>
+        .BT
+        {
+            background-color: rgb(32, 140, 148);
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .BT:hover
+        {
+            background-color: rgb(179, 235, 235);
+        }
+        .comentario
+        {
+            width: 90%;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados do Picolé</legend> 
+        Selecione um sabor:
+        <select>
+            <option> Uva </option>
+            <option> Morango </option>
+            <option> Laranja </option>
+        </select>
+        <br> <br>
+        Escolha um molho especial:
+        <input type="radio" name="molhos">Morango
+        <input type="radio" name="molhos">Chocolate
+        <br> <br>
+        Escolha a cor da embalagem:
+        <input type="checkbox"> &nbsp; Preta  
+        <input type="checkbox">&nbsp; Azul 
+        <input type="checkbox">&nbsp; Rosa
+        <br> <br>
+        Escolha a cor do palito:
+        <input type="color">
+    </fieldset>
+    <fieldset>
+        <legend> Dados de Entrega</legend>
+        Endereço: <input type="text">
+        <br> <br>
+        Cidade: <input type="text">
+        <br> <br>
+        Data de entrega: <input type="date">
+        <br> <br>
+        Comentários: <br>
+        <textarea> deixe aqui sua observação: </textarea>
+
+    </fieldset>
+    <button class="BT">ENVIAR PEDIDO</button>    <button class="BT">CANCELAR PEDIDO</button>
+</body>
+</html>
